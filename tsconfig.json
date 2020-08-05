@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "strict": true,
+        "outDir": "./dist",
+        "strictPropertyInitialization": false,
+        "module": "CommonJs",
+        "target": "ES2018",
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true
+    },
+    "exclude": ["node_modules"],
+    "include": ["./src/**/*"]
+}
+
+

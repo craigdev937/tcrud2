@@ -1,0 +1,18 @@
+<main class="row">
+    {{#each friends}}
+        <section class="col-md-3">
+            <section class="card">
+                <aside class="card-body">
+                    <h3>{{name}}</h3>
+                    <p>{{age}}</p>
+                    <p>{{info}}</p>
+                </aside>
+                <aside class="card-footer d-flex justify-context-between align-items-center">
+                    <a href="/friends/delete/{{id}}" class="btn btn-danger">Delete</a>
+                    <a href="/friends/edit/{{id}}" class="btn btn-secondary">Edit</a>
+                </aside>
+            </section>
+        </section>
+    {{/each}}
+</main>
+
