@@ -10,7 +10,8 @@ import { get404 } from "./controllers/errorCon";
 import { createConnection } from "typeorm";
 
 (async () => {
-    await createConnection();
+    await createConnection("default");
+
     const app: express.Application = express();
     app.use(helmet());
 
@@ -41,5 +42,4 @@ import { createConnection } from "typeorm";
         console.log("Press Ctrl + C to exit.");
     })
 })();
-
 

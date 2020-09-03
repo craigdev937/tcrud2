@@ -1,6 +1,6 @@
 import express from "express";
 import { indexHome, CreateFriend, RenderFriend, ListAllFriends, 
-    FindOneFriend,     EditFriend, DeleteFriend } from "../controllers/friendCon";
+    FindOneFriend, EditFriend, DeleteFriend } from "../controllers/friendCon";
 import { check } from "express-validator";
 
 export const friendRt: express.Router = express.Router();
